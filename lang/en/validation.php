@@ -35,7 +35,7 @@ return [
     'current_password' => 'The password is incorrect.',
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
-    'date_format' => 'The :attribute does not match the format :format.',
+    'date_format' => ':attribute alanı ":format" formatına uygun şekilde girilmeli.',
     'declined' => 'The :attribute must be declined.',
     'declined_if' => 'The :attribute must be declined when :other is :value.',
     'different' => 'The :attribute and :other must be different.',
@@ -117,7 +117,7 @@ return [
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
     'prohibits' => 'The :attribute field prohibits :other from being present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => ':attribute alanını boş bırakmayınız',
     'required_array_keys' => 'The :attribute field must contain entries for: :values.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
@@ -168,6 +168,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'Ad',
+        'gender' => 'Cinsiyet',
+        'birthday' => 'Doğumgünü',
+    ],
 
 ];

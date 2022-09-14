@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PersonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::middleware(['auth'])->prefix('admin')->group(function(){
+    Route::get('/person/list', [PersonController::class, 'index'])->name('person');
+    Route::any('/person/create', [PersonController::class, 'create'])->name('person.create');
+    Route::any('/person/edit/{id}', [PersonController::class, 'edit'])->name('person.edit');
+    Route::get('/person/delete/{id}', [PersonController::class, 'destroy'])->name('person.delete');
 });
 
 Route::get('/dashboard', function () {
