@@ -449,3 +449,16 @@
 1663258305-9078-1597597056,1663258305.7951,GET,/admin/person/create,"App\Http\Controllers\Admin\PersonController@create",200,338.20700645447,request
 1663258307-0109-1313822697,1663258306.8955,POST,/admin/person/create,"App\Http\Controllers\Admin\PersonController@create",302,343.46604347229,request
 1663258307-3638-129196515,1663258307.2467,GET,/admin/person/create,"App\Http\Controllers\Admin\PersonController@create",200,336.08794212341,request
+1663316752-0460-1547962516,1663316751.6043,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,1098.0777740479,request
+1663316754-8164-1716857772,1663316754.2247,GET,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@create",200,917.6549911499,request
+1663316756-3646-2057464506,1663316756.2434,POST,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@store",302,503.30591201782,request
+1663316756-8764-1956238982,1663316756.7549,GET,/dashboard,Closure,200,393.70799064636,request
+1663316758-3293-1526696506,1663316758.2122,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,375.83899497986,request
+1663316759-4095-583454688,1663316759.292,GET,/admin/person/create,"App\Http\Controllers\Admin\PersonController@create",200,350.80099105835,request
+1663316760-3445-2099953650,1663316760.1754,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,420.19820213318,request
+1663316761-4282-472748921,1663316761.3104,GET,/admin/adress/show/42,"App\Http\Controllers\Admin\AddressController@show",200,358.36696624756,request
+1663316763-4449-1633204923,1663316763.3285,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,356.54711723328,request
+1663316764-6623-590363222,1663316764.5458,GET,/admin/adress/create/42,"App\Http\Controllers\Admin\AddressController@create",200,360.31103134155,request
+1663316765-6469-161148495,1663316765.5295,POST,/admin/adress/create/42,"App\Http\Controllers\Admin\AddressController@create",302,344.32411193848,request
+1663316765-9969-1380775060,1663316765.8807,GET,/admin/adress/create/42,"App\Http\Controllers\Admin\AddressController@create",200,339.49303627014,request
+1663316768-6659-1842991328,1663316768.55,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,350.58617591858,request
