@@ -83,6 +83,6 @@
 	};
 @endif
 @if ($status)
-    setTimeout(function(){ window.location = "{{ route('person') }}"; }, 3000);
+    setTimeout(function(){ window.location = "{{ route('person.index') }}"; }, 3000);
 @endif
 </script>

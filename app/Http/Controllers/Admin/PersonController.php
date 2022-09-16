@@ -108,6 +108,6 @@ class PersonController extends Controller
     public function destroy(Request $request, $id)
     {
         Person::where('id', $id)->first()->delete();
-        return redirect()->route('person', ['page' => $request->page])->with('status', 'Silindi');
+        return redirect()->route('person.index', ['page' => $request->page])->with('status', 'Silindi');
     }
 }

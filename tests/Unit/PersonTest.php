@@ -8,11 +8,6 @@ use Tests\TestCase;
 
 class PersonTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
     public function test_create_person()
     {
         $user = User::factory()->create();
@@ -56,6 +51,17 @@ class PersonTest extends TestCase
         $response = $this->get(route('person.delete', ['id' => $person->id]));
 
         $response->assertStatus(302);
+    }
+
+    public function test_list_person()
+    {
+        $user = User::factory()->create();
+ 
+        $this->actingAs($user);
+
+        $response = $this->get(route('person.index'));
+
+        $response->assertStatus(200);
     }
 
 }

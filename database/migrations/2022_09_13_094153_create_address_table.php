@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('person_id');
             $table->string('address', 200);
-            $table->mediumInteger('post_code');
+            $table->string('post_code', 50);
             $table->string('city_name', 50);
             $table->string('country_name', 50);
             $table->softDeletes($column = 'deleted_at', $precision = 0);

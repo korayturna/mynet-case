@@ -80,6 +80,6 @@
 	};
 @endif
 @if ($status)
-    setTimeout(function(){ window.location = "{{ route('person', ['page' => $page]) }}"; }, 3000);
+    setTimeout(function(){ window.location = "{{ route('person.index', ['page' => $page]) }}"; }, 3000);
 @endif
 </script>

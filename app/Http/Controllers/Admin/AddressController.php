@@ -31,7 +31,7 @@ class AddressController extends Controller
             $request->validate([
                 'person_id' => ['exists:person,id'],
                 'address' => ['required', 'max:200'],
-                'post_code' => ['required', 'numeric'],
+                'post_code' => ['required', 'max:50'],
                 'country_name' => ['required', 'max:50'],
                 'city_name' => ['required', 'max:50'],
             ]);

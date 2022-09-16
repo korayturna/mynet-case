@@ -19,7 +19,7 @@ use App\Http\Controllers\Frontend\ListingController;
 Route::get('/', [ListingController::class, 'index'])->name('listing.index');
 
 Route::middleware(['auth'])->prefix('admin')->group(function(){
-    Route::get('/person/list', [PersonController::class, 'index'])->name('person');
+    Route::get('/person/list', [PersonController::class, 'index'])->name('person.index');
     Route::any('/person/create', [PersonController::class, 'create'])->name('person.create');
     Route::any('/person/edit/{id}', [PersonController::class, 'edit'])->name('person.edit');
     Route::get('/person/delete/{id}', [PersonController::class, 'destroy'])->name('person.delete');
