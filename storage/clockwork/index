@@ -468,3 +468,15 @@
 1663324395-2354-884217343,1663324395.1173,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,521.62718772888,request
 1663326132-2772-760394343,1663326132.0984,GET,/,"App\Http\Controllers\Frontend\ListingController@index",500,4796.1750030518,request
 1663326775-6689-1180621799,1663326775.541,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2413.8932228088,request
+1663327003-8094-1311080271,1663327003.488,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2854.7937870026,request
+1663330322-7472-1284160685,1663330322.4975,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2333.5008621216,request
+1663331465-9593-90410919,1663331465.7548,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2461.3242149353,request
+1663331470-2043-1270153710,1663331470.087,GET,/?page=2,"App\Http\Controllers\Frontend\ListingController@index",200,2381.2730312347,request
+1663332515-2706-113794076,1663332515.1544,GET,/?page=2,"App\Http\Controllers\Frontend\ListingController@index",200,2305.4988384247,request
+1663332519-6488-626246376,1663332519.5287,GET,/dashboard,Closure,200,1717.1649932861,request
+1663333026-3661-502427837,1663333026.2479,GET,/dashboard,Closure,200,1815.2861595154,request
+1663333029-3414-776837944,1663333029.2202,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,2258.5301399231,request
+1663333032-6556-1602321304,1663333032.5388,GET,/admin/person/create,"App\Http\Controllers\Admin\PersonController@create",200,1796.6148853302,request
+1663333036-0585-1149102194,1663333035.9433,POST,/logout,"App\Http\Controllers\Auth\AuthenticatedSessionController@destroy",302,1734.4169616699,request
+1663333037-8110-470918418,1663333037.6892,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2018.5477733612,request
+1663334619-5924-371286574,1663334619.4217,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2119.3399429321,request
