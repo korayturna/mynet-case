@@ -17,8 +17,11 @@
         <env name="APP_ENV" value="testing" />
         <env name="BCRYPT_ROUNDS" value="4" />
         <env name="CACHE_DRIVER" value="array" />
-        <!-- <env name="DB_CONNECTION" value="sqlite"/> -->
-        <env name="DB_DATABASE" value="testdb" />
+        <env name="DB_DATABASE" value="pk1wddi2cd9f0pqc" />
+        <env name="DB_USERNAME" value="whaig9jf681hmm5m" />
+        <env name="DB_PASSWORD" value="pb0dewer9tybf17v" />
+        <env name="DB_HOST" value="cwe1u6tjijexv3r6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com" />
+        <env name="DB_CONNECTION" value="mysql" />
         <env name="MAIL_MAILER" value="array" />
         <env name="QUEUE_CONNECTION" value="sync" />
         <env name="SESSION_DRIVER" value="array" />

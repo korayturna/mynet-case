@@ -480,3 +480,5 @@
 1663333036-0585-1149102194,1663333035.9433,POST,/logout,"App\Http\Controllers\Auth\AuthenticatedSessionController@destroy",302,1734.4169616699,request
 1663333037-8110-470918418,1663333037.6892,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2018.5477733612,request
 1663334619-5924-371286574,1663334619.4217,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2119.3399429321,request
+1663334964-9436-1851384120,1663334964.6403,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2568.9888000488,request
+1663335623-1174-721726154,1663335622.9232,GET,/,"App\Http\Controllers\Frontend\ListingController@index",200,2245.4299926758,request
