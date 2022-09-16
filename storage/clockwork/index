@@ -462,3 +462,7 @@
 1663316765-6469-161148495,1663316765.5295,POST,/admin/adress/create/42,"App\Http\Controllers\Admin\AddressController@create",302,344.32411193848,request
 1663316765-9969-1380775060,1663316765.8807,GET,/admin/adress/create/42,"App\Http\Controllers\Admin\AddressController@create",200,339.49303627014,request
 1663316768-6659-1842991328,1663316768.55,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,350.58617591858,request
+1663324392-2214-1324587323,1663324391.751,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",302,824.25093650818,request
+1663324392-7020-2126771229,1663324392.5853,GET,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@create",200,329.58006858826,request
+1663324394-7736-1636455369,1663324394.6537,POST,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@store",302,455.11889457703,request
+1663324395-2354-884217343,1663324395.1173,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,521.62718772888,request
