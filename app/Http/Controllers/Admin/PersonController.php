@@ -18,7 +18,13 @@ class PersonController extends Controller
      */
     public function index(Request $request)
     {
-        $persons = Person::orderBy('id', 'desc')->paginate(10);
+        $persons = Person::addSelect(['post_code' => function ($query) {
+        $query->select('post_code')
+            ->from('address')
+            ->whereColumn('person_id', 'person.id')
+            ->limit(1);
+        }])->orderBy('id', 'desc')
+        ->paginate(10);
         return view('admin.person.index', ['persons' => $persons, 'page' => $request->page]);
     }
 
@@ -29,22 +35,31 @@ class PersonController extends Controller
      */
     public function create(Request $request)
     {
-        $status = isset($request->status)?$request->status:false;
+        $status = false;
         if ($request->isMethod('post')) {
             $request->validate([
                 'name' => ['required', 'max:50'],
                 'gender' => ['required', new GenderCheck()],
                 'birthday' => ['required', 'date_format:d/m/Y'],
             ]);
-            
-            $person = new Person();
-            $person->name = $request->name;
-            $person->gender = $request->gender;
-            $person->birthday = $this->convertdateFormat($request->birthday);
-            $status = $person->save();
-            return redirect()->route('person.create', ['status' => $status]);
+            $status = PersonController::store($request);
         }
         return view('admin.person.create', ['status' => $status]);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        return Person::create([
+            'name' => $request->name,
+            'gender' => $request->gender,
+            'birthday' => $this->convertdateFormat($request->birthday),
+        ]);
     }
 
     /**
@@ -62,16 +77,26 @@ class PersonController extends Controller
                 'gender' => ['required', new GenderCheck()],
                 'birthday' => ['required', 'date_format:d/m/Y'],
             ]);
-            
-            $person = Person::find($id);
-            $person->name = $request->name;
-            $person->gender = $request->gender;
-            $person->birthday = $this->convertdateFormat($request->birthday);
-            $person->save();
-            $status = $person->wasChanged();
+            $status = PersonController::update($request, $id);
         }
         $person = Person::where('id', $id)->first();
         return view('admin.person.edit', ['person' => $person, 'status' => $status, 'page' => $request->page]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        return Person::where('id', $id)->update([
+            'name' => $request->name,
+            'gender' => $request->gender,
+            'birthday' => $this->convertdateFormat($request->birthday),
+        ]);
     }
 
     /**

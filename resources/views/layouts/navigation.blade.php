@@ -71,8 +71,8 @@
             <x-responsive-nav-link :href="route('person')" :active="request()->routeIs('person')">
                 {{ __('custom.person') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('custom.address') }}
+            <x-responsive-nav-link :href="route('person.create')" :active="request()->routeIs('person.create')">
+                {{ __('custom.personcreate') }}
             </x-responsive-nav-link>
         </div>
 
