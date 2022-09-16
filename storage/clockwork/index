@@ -466,3 +466,4 @@
 1663324392-7020-2126771229,1663324392.5853,GET,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@create",200,329.58006858826,request
 1663324394-7736-1636455369,1663324394.6537,POST,/login,"App\Http\Controllers\Auth\AuthenticatedSessionController@store",302,455.11889457703,request
 1663324395-2354-884217343,1663324395.1173,GET,/admin/person/list,"App\Http\Controllers\Admin\PersonController@index",200,521.62718772888,request
+1663326132-2772-760394343,1663326132.0984,GET,/,"App\Http\Controllers\Frontend\ListingController@index",500,4796.1750030518,request
