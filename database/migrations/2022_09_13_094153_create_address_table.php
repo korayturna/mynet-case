@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('person_id');
             $table->string('address', 200);
             $table->mediumInteger('post_code');
-            $table->unsignedTinyInteger('city_id');
-            $table->unsignedTinyInteger('country_id');
+            $table->string('city_name', 50);
+            $table->string('country_name', 50);
             $table->softDeletes($column = 'deleted_at', $precision = 0);
             $table->timestamps();
         });

@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
          
@@ -16,8 +16,6 @@
 					                <th>{{ __('custom.name') }}</th>
 					                <th>{{ __('custom.gender') }}</th>
 					                <th>{{ __('custom.birthday') }}</th>
-
-					                <th colspan='4'></th>
 					            </tr>
 					        </thead>
 					        <tbody>
@@ -26,10 +24,6 @@
 					                    <td>{{ $person->name }}</td>
 					                    <td>{{ __('custom.'.$person->gender) }}</td>
 					                   	<td>{{ date('d/m/Y', strtotime($person->birthday)) }}</td>
-					                    <td><a href="{{ route('person.edit', ['id' => $person->id, 'page' => $page]) }}" title="Güncelle"><i class="bi bi-pencil"></i></a></td>
-					                    <td><a href="{{ route('person.delete', ['id' => $person->id, 'page' => $page]) }}" title="Sil"><i class="bi bi-trash"></i></a></td>
-					                    <td><a href="{{ route('address.create', ['id' => $person->id, 'page' => $page]) }}" title="Adres Ekle"><i class="bi bi-plus-square"></i></a></td>
-					                    <td>@if ($person->post_code) <a href="{{ route('address.show', ['id' => $person->id, 'page' => $page]) }}" title="Adres Görüntüle"><i class="bi bi-card-list"></i></a>@endif</td>
 					                </tr>
 					            @empty
 					                <tr>
@@ -44,4 +38,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-guest-layout>
