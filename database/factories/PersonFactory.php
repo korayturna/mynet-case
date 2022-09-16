@@ -17,7 +17,9 @@ class PersonFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->name(),
+            'gender' => fake()->randomElement(['male', 'female']),
+            'birthday' => date('Y-m-d', rand( strtotime("Jan 01 1900"), strtotime("Nov 01 2000"))),
         ];
     }
 }

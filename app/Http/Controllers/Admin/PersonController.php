@@ -19,7 +19,7 @@ class PersonController extends Controller
     public function index(Request $request)
     {
         $persons = Person::addSelect(['post_code' => function ($query) {
-        $query->select('post_code')
+            $query->select('post_code')
             ->from('address')
             ->whereColumn('person_id', 'person.id')
             ->limit(1);
@@ -107,7 +107,7 @@ class PersonController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-        $person = Person::where('id', $id)->first()->delete();
+        Person::where('id', $id)->first()->delete();
         return redirect()->route('person', ['page' => $request->page])->with('status', 'Silindi');
     }
 }
