@@ -1,2 +1,4 @@
 /vendor/
-/storage/
+/storage/clockwork/
+/storage/app/
+/storage/logs/
