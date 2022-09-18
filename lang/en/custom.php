@@ -37,5 +37,6 @@ return [
     'login' => 'Giriş Yap',
     'forgetpassword' => 'Şifremi Unuttum',
     'rememberme' => 'Beni hatırla',
-    'logout' => 'Çıkış yap'
+    'logout' => 'Çıkış yap',
+    'confirm_password' => 'Şifre Tekrar',
 ];
