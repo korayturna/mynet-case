@@ -3,7 +3,7 @@
 - LAMP environment required
 - Laravel v9.30.1 requires PHP v8.0.2 or greater
 - Composer required (stable v2.3.3)
-- Apache Documentroot should be setup to 'app/public/' path
+- Apache Documentroot should be setup to 'public/' path
 - composer.json includes ext-redis for able to install php-redis into Heroku server
 
 # Installation
