@@ -23,6 +23,7 @@ Project Link; http://fathomless-lowlands-51964.herokuapp.com/
 Admin Link; http://fathomless-lowlands-51964.herokuapp.com/login
 
 Username: korayturna@msn.com
+
 Password: as12df34
 
 Unit tests are done by PHPUnit;
