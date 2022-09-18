@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Person;
+use App\Models\Address;
 use App\Helpers\FormatHelper;
 use App\Rules\GenderCheck;
 
@@ -107,7 +108,8 @@ class PersonController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-        Person::where('id', $id)->first()->delete();
+        Person::find($id)->delete();
+        Address::where('person_id', $id)->delete();
         return redirect()->route('person.index', ['page' => $request->page])->with('status', 'Silindi');
     }
 }

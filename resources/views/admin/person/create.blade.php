@@ -8,7 +8,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
 	             	<div class="container">
-	             		@include('shared.alert')
+	             		@include('shared.alert', ['message' => 'created'])
 	             		<form action="{{ route('person.create') }}" method="POST">
 					        @csrf
 					         <div class="row">

@@ -24,5 +24,4 @@ class ListingController extends Controller
         ->paginate(10);
         return view('frontend.listing.index', ['persons' => $persons, 'page' => $request->page]);
     }
-
 }

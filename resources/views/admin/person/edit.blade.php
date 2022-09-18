@@ -8,34 +8,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
 	             	<div class="container">
-	             		<!-- Modal -->
-						<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-						  <div class="modal-dialog">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						      </div>
-						      <div class="modal-body">
-						        @if ($errors->any())
-								    <div class="alert alert-danger">
-								        <ul>
-								            @foreach ($errors->all() as $error)
-								                <li>* {{ $error }}</li>
-								            @endforeach
-								        </ul>
-								    </div>
-								@endif
-								@if ($status)
-									<div class="alert alert-primary">
-								        <ul>
-								            <li>{{ __('custom.updated') }}</li>
-								        </ul>
-								    </div>
-								@endif
-						      </div>
-						    </div>
-						  </div>
-						</div>
+	             		@include('shared.alert', ['message' => 'updated'])
 	             		<form action="{{ route('person.edit',['id' => $person->id, 'page' => $page]) }}" method="POST">
 					        @csrf
 					         <div class="row">
@@ -72,14 +45,3 @@
         </div>
     </div>
 </x-app-layout>
-<script>
-@if ($errors->any() || $status)
-	var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
-	document.onreadystatechange = function () {
-	  myModal.show();
-	};
-@endif
-@if ($status)
-    setTimeout(function(){ window.location = "{{ route('person.index', ['page' => $page]) }}"; }, 3000);
-@endif
-</script>

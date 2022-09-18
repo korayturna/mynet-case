@@ -15,7 +15,6 @@
 					                <th>{{ __('custom.name') }}</th>
 					                <th>{{ __('custom.gender') }}</th>
 					                <th>{{ __('custom.birthday') }}</th>
-
 					                <th colspan='4'></th>
 					            </tr>
 					        </thead>
@@ -46,10 +45,8 @@
 </x-app-layout>
 <script type="text/javascript">
 $(document).ready(function() {
-
 	$('body').on('click', '#delete-person', function() {
 		$('#delete-confirm').attr('href', $(this).attr('phref'));
 	});
-
 });
 </script>
