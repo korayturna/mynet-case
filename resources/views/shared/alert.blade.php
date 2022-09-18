@@ -14,14 +14,12 @@
 		        </ul>
 		    </div>
 		@endif
-		@if (isset($status))
-			@if ($status)
-				<div class="alert alert-primary">
-			        <ul>
-			            <li>{{ __('custom.created') }}</li>
-			        </ul>
-			    </div>
-			@endif
+		@if ($status)
+			<div class="alert alert-primary">
+		        <ul>
+		            <li>{{ __('custom.created') }}</li>
+		        </ul>
+		    </div>
 		@endif
       </div>
     </div>
