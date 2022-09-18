@@ -39,4 +39,6 @@ return [
     'rememberme' => 'Beni hatırla',
     'logout' => 'Çıkış yap',
     'confirm_password' => 'Şifre Tekrar',
+    'register' => 'Kayıt ol',
+    'already_registered' => 'Kayıtlı kullanıcı'
 ];
