@@ -20,7 +20,9 @@ php artisan migrate
 
 Project Link; http://fathomless-lowlands-51964.herokuapp.com/
 
-Admin Link; http://fathomless-lowlands-51964.herokuapp.com/login
+Admin Login Link; http://fathomless-lowlands-51964.herokuapp.com/login
+
+Admin Register Link; http://fathomless-lowlands-51964.herokuapp.com/register
 
 Username: korayturna@msn.com
 
