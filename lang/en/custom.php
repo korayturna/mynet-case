@@ -29,4 +29,13 @@ return [
     'post_code' => 'Posta Kodu',
     'country_name' => 'Ülke',
     'city_name' => 'Şehir',
+    'delete_confirm' => 'Simek istediğinize emin misiniz?',
+    'yes' => 'Evet',
+    'no' => 'Hayır',
+    'password' => 'Şifre',
+    'email' => 'Eposta',
+    'login' => 'Giriş Yap',
+    'forgetpassword' => 'Şifremi Unuttum',
+    'rememberme' => 'Beni hatırla',
+    'logout' => 'Çıkış yap'
 ];

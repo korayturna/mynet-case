@@ -1,4 +1,4 @@
-<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="alertmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -27,9 +27,9 @@
 </div>
 <script>
 @if ($errors->any() || $status)
-	var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+	var alertmodal = new bootstrap.Modal(document.getElementById("alertmodal"), {});
 	document.onreadystatechange = function () {
-	  myModal.show();
+	  alertmodal.show();
 	};
 @endif
 @if ($status)
